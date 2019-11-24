@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Shop</title>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<link rel="icon" type="image/png/gif" href="allImage/title.jpeg"  >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="products.js"></script>
+</head>
+<body onload="welcomeTo()">
+<div id="likeBody">
+	<div id="Banner">
+		<header>
+			<span id="ragni">R&R  </span><span id="shoping">Super  </span><span id="mall">   Market</span><br><span id="address">add: Marhowrah purani bajar;<br>Chapra(Saran), 841418; Mob-9661713931</span><br><br>
+		</header>
+	</div>
+	<div id="payBlock">
+		<div id="MyCart" onclick="showMyCart()"></div>
+		<div id="welcome"></div>
+		<nav onclick="showMyProduct(this)" class="forToggle" id="forToggle">Press Here!</nav>
+		<div id="productHome"></div>
+		<div id="backProduct" onclick="goToParentProduct()"></div>
+		<div id="main"></div>
+		<div id="main2"></div>
+		<div id="addToCart"></div>
+		<div id="mainCart"></div>
+	</div>
+	<form id="paymentForm">
+		<fieldset id="field2">
+		<label>Total Amount</label>
+		<input type="text" id="paytm" placeholder="" name="email" disabled="true" required><br>
+		<label>Card no</label>
+		<input type="number" id="name" minlength="16" maxlength="16" placeholder="Credit/Debit card no" name="email" required><br>
+		<label>ccv no</label>
+		<input type="number" id="name" minlength="3" maxlength="3" placeholder="cvv" name="email" required><br>
+		<label>Expairy Date</label>
+		<input type="date" id="name" placeholder="" name="email"  max="2025-12-31" min="2018-1-31"  required><br>
+		<label>Password</label>
+		<input type="password" id="name" placeholder="Enter your pasword" name="email" required><br>
+		</fieldset>
+		<input type="submit" value="Submit" id="submitPay" name="email" >
+		<input type="button" value="Back" id="backP" onclick="backPay()" >
+
+	</form>
+</div>	
+<script type="text/javascript" src="shop.js"></script>
+</body>
+</html>
